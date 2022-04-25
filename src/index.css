@@ -5,6 +5,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('./assets/fonts/DINPro.ttf') format('ttf'),
+       url('./assets/fonts/DINPro.woff') format('woff'),
+       url('./assets/fonts/DINPro.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./assets/fonts/BebasNeue.ttf') format('ttf'),
+       url('./assets/fonts/BebasNeue.woff') format('woff'),
+       url('./assets/fonts/BebasNeue.woff2') format('woff2');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DIN Pro';
+}
+
+p {
+  font-family: 'Bebas Neue';
 }
 
 code {

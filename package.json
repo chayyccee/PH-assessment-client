@@ -1,8 +1,10 @@
 {
   "name": "partner_hero",
   "version": "0.1.0",
+  "description": "A partner hero full stack assessment",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
@@ -10,9 +12,16 @@
     "@types/node": "^16.11.27",
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
+    "axios": "^0.26.1",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "styled-components": "^5.3.5",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
   },
@@ -20,8 +29,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx"
   },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "spotify",
+    "react",
+    "react-redux",
+    "typescript"
+  ],
+  "author": "Chinedu K. Eke",
+  "license": "ISC",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,5 +61,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@types/react-redux": "^7.1.24",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "@types/styled-components": "^5.1.25",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.14.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0"
   }
 }

@@ -1,3 +1,37 @@
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.login__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  /* background-color: #231f20; */
+  background-image: url(/src/assets/images/home/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.wallpaper__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100%;
+  background-image: url(/src/assets/images/home/hompage.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
 }
