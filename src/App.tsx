@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { accessToken, logout } from './utils/getAccessToken';
 import { catchErrors } from './utils/catchErrors';
 import { getUser } from './utils/getCurrentUser';
@@ -13,14 +14,14 @@ const App: React.FC = () => {
 
   React.useEffect(() => {
     setToken(accessToken);
-    console.log(accessToken);
+    // console.log(accessToken);
 
   const fetchUser = async () => {
 
       const { data } = await getUser();
       setUser(data);
 
-      console.log(data);
+      // console.log(data);
     };
 
   catchErrors(fetchUser());
