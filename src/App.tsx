@@ -9,8 +9,11 @@ import {
   accessToken,
   // logout 
 } from './utils/getAccessToken';
+import { baseurl } from './config';
+
 // import { catchErrors } from './utils/catchErrors';
 // import { getUser } from './utils/getCurrentUser';
+
 import { useMedia } from './hooks/ResponsiveHook';
 
 import Logo from './assets/images/home/spotify-logo1.svg';
@@ -71,7 +74,7 @@ const App: React.FC = (): JSX.Element => {
           <Route path='/' element={
             <div className='app'>
             <div className='login__div'>
-              <a href="http://localhost:4003/login">
+              <a href={`${baseurl}/login`} >
                 <img aria-hidden='true' src={Logo} style={{ height: '80px', width: '80px' }} alt='spotify-logo' className='login__logo' />
                 <span className={`spotify ${isMobile ? 'bg-dark' : ''} `}>Login with Spotify</span>
               </a>
