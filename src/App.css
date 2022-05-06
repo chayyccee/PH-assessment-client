@@ -1,7 +1,12 @@
+@import "antd/dist/antd.css";
 .app {
   display: flex;
   height: 100vh;
   background-color: #fafafa;
+}
+
+a {
+  font-size: 2.5rem;
 }
 
 .login__div {
@@ -69,4 +74,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    display: flex;
+    height: 100vh;
+    background-color: #fafafa;
+  }
+  
+  .login__div {
+    width: 100%;
+    background-image: url(/src/assets/images/home/headset2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .spotify {
+    margin-left: 15px;
+    padding: 0 5px 0 5px;
+  }
+
+  .login__logo {
+    width: 50%;
+  }
+  .wallpaper__div {
+    display: none;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+  
 }

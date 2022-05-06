@@ -1,0 +1,99 @@
+.body__tab {
+    padding: 0 3rem 0 3rem;
+}
+
+
+.second_body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.w__75 {
+    width: 75%;
+}
+
+.w__25 {
+    width: 25%;
+}
+
+.image-404 {
+    background-image: url("../assets/images/errorPage/flamingos-background.png");
+    background-repeat: repeat;
+    background-position: initial;
+    background-size: cover;
+    min-height: calc(100vh - 25px);
+    width: 100%;
+}
+
+.text-404 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bold-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 180px;
+    color: #333333;
+    margin-top: 160px;
+}
+
+.light-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    margin-top: 205px;
+}
+
+@media screen and (max-width: 767px) {
+    .text-404 {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .bold-text {
+        margin-top: 80px;
+    }
+
+    .light-text {
+        margin-top: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .body__tab {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body__tab {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .second_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .w__75 {
+        width: 100%;
+    }
+
+    .w__25 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .body__tab {
+        padding: 0 0.5rem 0 0.5rem;
+    }
+}
