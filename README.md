@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/87e261df-e806-438c-99c6-4d49dae1600a/deploy-status)](https://app.netlify.com/sites/dynamic-druid-0064ac/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
